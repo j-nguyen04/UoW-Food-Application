@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --blue: rgb(30, 48, 80);
+    --blue-hover: rgb(54, 85, 138);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .7rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border-color .3s ease;
+    text-transform: none;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border-color .3s ease;
+    text-transform: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--blue-hover);
+}
+
+input::placeholder {
+    text-transform: none;
+}
+
+.signup-link,
+.signup-link a,
+.error {
+    text-transform: none;
+}
+
+button {
+    width: 100%;
+    padding: 1.5rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background: var(--blue-hover);
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 1.6rem;
+    }
+
+    .login-box {
+        padding: 2.4rem 2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1.2rem;
+    }
+
+    .login-box {
+        padding: 2rem 1.6rem;
+        border-radius: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 1.5rem;
+    }
+}

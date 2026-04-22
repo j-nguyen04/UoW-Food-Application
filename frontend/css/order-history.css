@@ -1,0 +1,266 @@
+.tracking-section {
+    margin-top: 8rem;
+    min-height: 100vh;
+    padding: 12rem 5% 6rem;
+    background:
+        radial-gradient(circle at top left, rgba(30, 48, 80, 0.1), transparent 30%),
+        linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+}
+
+.tracking-shell {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.tracking-intro {
+    max-width: 72rem;
+    margin: 0 auto 3rem;
+    font-size: 1.7rem;
+    color: #556070;
+    text-align: center;
+    line-height: 1.7;
+    text-transform: none;
+}
+
+.tracking-empty,
+.order-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(30, 48, 80, 0.08);
+    border-radius: 2rem;
+    box-shadow: 0 2rem 4rem rgba(30, 48, 80, 0.08);
+}
+
+.tracking-empty {
+    max-width: 70rem;
+    margin: 4rem auto 0;
+    padding: 4rem;
+    text-align: center;
+}
+
+.tracking-empty h2 {
+    font-size: 3rem;
+    color: #1c2430;
+    margin-bottom: 1rem;
+}
+
+.tracking-empty p {
+    font-size: 1.6rem;
+    color: #5f6b7a;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.tracking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.4rem;
+    margin-top: 3rem;
+}
+
+.order-card {
+    padding: 2.4rem;
+}
+
+.order-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    align-items: flex-start;
+}
+
+.order-label,
+.meta-label {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+    color: #728096;
+    margin-bottom: 0.6rem;
+}
+
+.order-card h2 {
+    font-size: 2.6rem;
+    color: #18202b;
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.3rem;
+    border-radius: 999px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.status-pending {
+    background: #fff4d8;
+    color: #9a6700;
+}
+
+.status-in-progress {
+    background: #dff3ff;
+    color: #005b99;
+}
+
+.status-shipped {
+    background: #e8edff;
+    color: #364fc7;
+}
+
+.status-delivered {
+    background: #ddfbe6;
+    color: #18794e;
+}
+
+.status-cancelled {
+    background: #ffe3e3;
+    color: #c92a2a;
+}
+
+.status-generic {
+    background: #edf2f7;
+    color: #334155;
+}
+
+.status-description {
+    font-size: 1.5rem;
+    color: #526071;
+    line-height: 1.6;
+    margin: 1.6rem 0 2rem;
+    text-transform: none;
+}
+
+.order-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem;
+    padding: 1.6rem;
+    background: #f7f9fc;
+    border-radius: 1.4rem;
+}
+
+.order-meta strong {
+    font-size: 1.5rem;
+    color: #1d2734;
+}
+
+.order-items-list {
+    margin-top: 2rem;
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 7rem 1fr auto;
+    gap: 1.4rem;
+    align-items: center;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-item img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.history-item-copy h3 {
+    font-size: 1.6rem;
+    color: #1d2734;
+    margin-bottom: 0.4rem;
+}
+
+.history-item-copy p,
+.history-item strong,
+.history-total span,
+.history-total strong {
+    font-size: 1.5rem;
+    color: #556070;
+}
+
+.history-item-copy p {
+    text-transform: none;
+}
+
+.history-item strong,
+.history-total strong {
+    color: var(--blue);
+}
+
+.history-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dbe3ec;
+}
+
+@media (max-width: 768px) {
+    .tracking-section {
+        padding-top: 10rem;
+    }
+
+    .tracking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card-top {
+        flex-direction: column;
+    }
+
+    .history-item {
+        grid-template-columns: 1fr;
+    }
+
+    .order-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .history-item img {
+        width: 100%;
+        max-width: 12rem;
+        height: 10rem;
+    }
+
+    .history-total {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tracking-section {
+        padding: 10rem 4% 4rem;
+    }
+
+    .tracking-empty,
+    .order-card {
+        border-radius: 1.6rem;
+    }
+
+    .tracking-empty {
+        padding: 2.4rem 1.8rem;
+    }
+
+    .order-card {
+        padding: 1.8rem;
+    }
+
+    .order-card h2 {
+        font-size: 2.2rem;
+    }
+}

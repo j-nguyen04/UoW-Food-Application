@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --blue: rgb(30, 48, 80);
+    --blue-hover: rgb(54, 85, 138);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.signup-container {
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: .7rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    transition: border-color .3s ease;
+    text-transform: none;
+}
+
+input:focus {
+    border-color: var(--blue);
+}
+
+input::placeholder {
+    text-transform: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--blue);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: var(--blue-hover);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+.login-link a {
+    color: var(--blue);
+    text-decoration: none;
+    text-transform: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 1.6rem;
+    }
+
+    .signup-container {
+        padding: 2.4rem 1.8rem;
+    }
+
+    .form-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1.2rem;
+    }
+
+    .signup-container {
+        padding: 2rem 1.4rem;
+        border-radius: 1.2rem;
+    }
+
+    .form-heading {
+        font-size: 2rem;
+    }
+}
