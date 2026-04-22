@@ -9,30 +9,33 @@
 - MySQL available via phpMyAdmin
 
 ### Steps
-```
+
 1. Clone the repository to your server's root directory.
-   - git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
 ```
-
-
-3. Start servers:
+   git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
+```
+2. Start servers:
+```
    - Open XAMPP Control Panel and start **Apache** and **MySQL**.
-
-4. Setup database:
+```
+3. Setup database:
+``` 
    - Go to `http://localhost/phpmyadmin`
    - Create a new database named `solirestaurant`
    - Click **Import** and select the `solirestaurant.sql` file from the project folder
-
-5. Configure:
+```
+4. Configure:
+```
    - Ensure `config.php` has the correct database credentials
    - Default XAMPP credentials are usually:
      - user: `root`
      - password: (empty)
-
+```
 6. Run:
+```
    - Open your browser and visit:
      `http://localhost/UoW%20Food%20Takeaway/`
-
+```
 ## Stripe Setup
 
 This project requires Stripe API keys for checkout functionality.
