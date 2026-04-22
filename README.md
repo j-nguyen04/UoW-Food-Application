@@ -12,29 +12,29 @@
 
 1. Clone the repository to your server's root directory.
 ```
-   git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
+git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
 ```
 2. Start servers:
 ```
-   - Open XAMPP Control Panel and start **Apache** and **MySQL**.
+- Open XAMPP Control Panel and start **Apache** and **MySQL**.
 ```
 3. Setup database:
 ``` 
-   - Go to `http://localhost/phpmyadmin`
-   - Create a new database named `solirestaurant`
-   - Click **Import** and select the `solirestaurant.sql` file from the project folder
+- Go to `http://localhost/phpmyadmin`
+- Create a new database named `solirestaurant`
+- Click **Import** and select the `solirestaurant.sql` file from the project folder
 ```
 4. Configure:
 ```
-   - Ensure `config.php` has the correct database credentials
-   - Default XAMPP credentials are usually:
-     - user: `root`
-     - password: (empty)
+- Ensure `config.php` has the correct database credentials
+- Default XAMPP credentials are usually:
+- user: `root`
+- password: (empty)
 ```
 6. Run:
 ```
-   - Open your browser and visit:
-     `http://localhost/UoW%20Food%20Takeaway/`
+- Open your browser and visit:
+- 'http://localhost/UoW%20Food%20Takeaway/`
 ```
 ## Stripe Setup
 
