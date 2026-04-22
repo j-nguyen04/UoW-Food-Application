@@ -11,10 +11,8 @@
 ### Steps
 
 1. Clone the repository to your server's root directory.
+   - git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
 
-   ```bash
-git clone https://github.com/your-username/your-repository.git "C:\xampp\htdocs\UoW Food Takeaway"
-```
 
 2. Start servers:
    - Open XAMPP Control Panel and start **Apache** and **MySQL**.
